@@ -1,0 +1,13 @@
+{"code":"4.364","n":23517,"period":62,"preperiod":11687,"needed":23501,"max":33,"lost":{"perPeriod":false,"count":2},"first40":"0120312435243521352475647869286974657425","seconds":1.71}
+{"code":"0.356","n":14933,"period":142,"preperiod":7315,"needed":14917,"max":19,"lost":{"perPeriod":false,"count":2},"first40":"0120212451675128262815b79581212c25856181","seconds":0.42}
+{"code":"0.165","n":13481,"period":1550,"preperiod":5181,"needed":13465,"max":25,"lost":{"perPeriod":false,"count":2},"first40":"0102132134436231281265445182182136c56481","seconds":0.32}
+{"code":"0.156","n":7675,"period":349,"preperiod":3479,"needed":7659,"max":23,"lost":{"perPeriod":false,"count":2},"first40":"0110222441113224446662111576688111265558","seconds":0.12}
+{"code":"0.644","n":7415,"period":442,"preperiod":3256,"needed":7399,"max":64,"lost":{"perPeriod":false,"count":2},"first40":"001234516325896a5496ea42367g49eagh94ef19","seconds":0.15}
+{"code":"4.344","n":2117,"period":51,"preperiod":998,"needed":2101,"max":35,"lost":{"perPeriod":false,"count":2},"first40":"012021246164812a219d419ag12ag1464b2a2d1a","seconds":0.03}
+{"code":"0.45","n":1054,"period":20,"preperiod":498,"needed":1038,"max":8,"lost":{"perPeriod":false,"count":2},"first40":"0011223114432211422644112271144322114827","seconds":0.01}
+{"code":"0.055","n":833,"period":148,"preperiod":259,"needed":817,"max":8,"lost":{"perPeriod":false,"count":2},"first40":"0011122231114443222111422264441112227111","seconds":0.01}
+{"code":"0.127","n":93183,"period":4,"preperiod":46578,"needed":93167,"max":56,"lost":{"perPeriod":false,"count":1190},"first40":"0102210441220144617701226144812781072681","seconds":8.08}
+{"code":"4.064","n":220827,"period":16132,"preperiod":94272,"needed":220811,"max":111,"lost":{"perPeriod":false,"count":2},"first40":"001234561328576423187452891b4dc18ab625cg","seconds":158.06}
+{"code":"0.16","n":509638,"period":149459,"preperiod":105351,"needed":509622,"max":23,"lost":{"perPeriod":false,"count":7},"first40":"0100122140142140142142102142145142142142","seconds":254.87}
+{"code":"0.56","n":653586,"period":144,"preperiod":326640,"needed":653570,"max":64,"lost":{"perPeriod":false,"count":2},"first40":"01022411324466211768411654811c456113c668","seconds":751.64}
+{"code":"4.406","n":588301,"period":44,"preperiod":294097,"needed":588285,"max":50,"lost":{"perPeriod":false,"count":2},"first40":"00123456218745981456781f65482gb65h123b8g","seconds":895.33}

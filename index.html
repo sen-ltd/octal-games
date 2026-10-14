@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Octal games — Kayles against a perfect player, and the periods of every three-digit octal game</title>
+    <meta
+      name="description"
+      content="Kayles, Dawson's Kayles and any octal game in the browser against a perfect Sprague–Grundy player that marks the winning moves, plus the period of every octal game with at most three digits recomputed, proved with the Guy–Smith periodicity theorem and checked against Achim Flammenkamp's tables."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23151412'/%3E%3Ccircle cx='8' cy='16' r='4.5' fill='%23efe2c6'/%3E%3Ccircle cx='16' cy='16' r='4.5' fill='%23e8a15a'/%3E%3Ccircle cx='24' cy='16' r='4.5' fill='%23efe2c6'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Octal games <span>Kayles &amp; friends</span></h1>
+        <p class="sub">
+          Rows of pins. On your turn knock down a block of adjacent pins in one row, as the game's code allows; a
+          gap in a row splits it in two. Whoever cannot move <strong>loses</strong>. The computer plays perfectly
+          by Sprague–Grundy theory: every row of <em>n</em> pins is worth a nimber <em>G(n)</em>, and a position
+          is lost for the side to move exactly when the <strong>nim-sum</strong> of its rows is 0. With hints on,
+          the <strong class="win-t">winning moves</strong> are listed and lit up.
+        </p>
+      </header>
+
+      <div id="wrap">
+        <div class="stage">
+          <div class="controls">
+            <label class="sel">game <select id="gameSel"></select></label>
+            <label class="sel">code <input type="text" id="codeIn" spellcheck="false" /></label>
+            <label class="sel">rows <input type="text" id="heapsIn" spellcheck="false" /></label>
+            <label class="sel">you move
+              <select id="youSel">
+                <option value="1">first</option>
+                <option value="2">second</option>
+              </select>
+            </label>
+            <label class="sel chk"><input type="checkbox" id="hints" checked /> hints</label>
+            <button id="undo">Undo</button>
+            <button id="newgame" class="primary">New game</button>
+          </div>
+          <div id="boardwrap"><svg id="board" role="img" aria-label="Rows of pins"></svg></div>
+          <div id="status" aria-live="polite"></div>
+          <h3 style="margin-top: 18px">winning moves</h3>
+          <div class="panel" id="moves"></div>
+        </div>
+        <div class="side">
+          <h3>Grundy values of this game</h3>
+          <div class="panel" id="seq"></div>
+          <h3>every octal game with at most three digits</h3>
+          <div class="panel" id="forms"></div>
+        </div>
+      </div>
+
+      <section class="notes">
+        <h2>The code</h2>
+        <p>
+          An octal game is written <em>d</em><sub>0</sub>.<em>d</em><sub>1</sub><em>d</em><sub>2</sub><em>d</em><sub>3</sub>…
+          Digit <em>d<sub>k</sub></em> says what may remain after taking <em>k</em> pins from one row: add 1 if the
+          row may vanish, 2 if one row may remain, 4 if two rows may remain (the pins were taken from the middle).
+          Kayles is <strong>0.77</strong>: take one or two adjacent pins from anywhere. Dawson's Kayles is
+          <strong>0.07</strong>: always take exactly two. A leading 4 lets a move split a row without taking
+          anything.
+        </p>
+        <h2>Periods, and how they are proved</h2>
+        <p>
+          The Grundy values of every octal game with finitely many digits that has ever been settled turned out to
+          be <strong>eventually periodic</strong>: after a preperiod of <em>v</em> values they repeat with period
+          <em>p</em>. Kayles has <em>p</em> = 12 and <em>v</em> = 71. A finite computation can prove this, by the
+          Guy–Smith periodicity theorem: if <em>G</em>(<em>n</em> + <em>p</em>) = <em>G</em>(<em>n</em>) for every
+          <em>n</em> from <em>v</em> up to 2<em>v</em> + <em>p</em> + <em>t</em> (with <em>t</em> the number of
+          digits), it holds for all larger <em>n</em> too, because every option of a long row has a long part that
+          the period already covers. This page computes the values, finds the smallest period that the theorem
+          proves from them, and compares it with Achim Flammenkamp's tables. Many three-digit games, among them
+          Officers (0.6) and 0.04, are still open: no period has been found in billions of values.
+        </p>
+      </section>
+
+      <footer>
+        <p>
+          Built by <a href="https://sen.ltd/">SEN LLC</a>. TypeScript, no runtime dependencies. Reference data:
+          <a href="http://wwwhomes.uni-bielefeld.de/achim/octal.html">Achim Flammenkamp, Sprague-Grundy Values of
+          Octal-Games</a>. <a href="https://github.com/sen-ltd/octal-games">Source</a>.
+        </p>
+      </footer>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

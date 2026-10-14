@@ -1,0 +1,23 @@
+{
+  "name": "octal-games",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Kayles, Dawson's Kayles and any octal game in the browser against a perfect Sprague–Grundy player, plus the period of every octal game with at most three digits recomputed, proved with the Guy–Smith theorem and checked against Flammenkamp's tables. TypeScript, no runtime deps.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 4173",
+    "test": "vitest run",
+    "literature": "node tools/literature.mts",
+    "table": "node tools/run-jobs.mts runs/jobs-standard.txt runs/standard.jsonl 4 && node tools/run-jobs.mts runs/jobs-solved.txt runs/solved.jsonl 6 && node tools/build-table.mts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11",
+    "vitest": "^2.1.5"
+  },
+  "license": "MIT"
+}
