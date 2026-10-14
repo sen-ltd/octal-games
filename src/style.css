@@ -58,11 +58,6 @@ button.primary { background: var(--h); color: #1a120a; border-color: var(--h); f
 .panel dt { color: var(--dim); font-size: 13px; }
 .panel dd { margin: 0; font-variant-numeric: tabular-nums; }
 .fine { color: var(--dim); font-size: 12.5px; margin: 8px 0 0; }
-table.bound { border-collapse: collapse; font-size: 13px; font-variant-numeric: tabular-nums; }
-table.bound th { color: var(--dim); font-weight: 500; padding: 2px 12px 2px 0; text-align: left; }
-table.bound td { padding: 2px 12px 2px 0; }
-  width: 22px; height: 20px; text-align: center; border-radius: 4px; color: #14110d; font-weight: 700;
-}
 .notes { max-width: 78ch; margin-top: 36px; color: var(--dim); }
 .notes h2 { color: var(--ink); font-size: 19px; margin: 26px 0 8px; }
 .notes strong { color: var(--ink); }
