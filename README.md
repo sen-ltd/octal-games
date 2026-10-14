@@ -86,3 +86,10 @@ npm run table      # recompute runs/*.jsonl and src/results.json (about 15 minut
 
 MIT. The numbers in `src/literature.json` are taken from Achim Flammenkamp's pages, which are the reference this
 project checks itself against.
+
+<!-- sen-publish:links -->
+## Links
+
+- 🌐 Demo: https://sen.ltd/portfolio/octal-games/
+- 📝 記事: https://qiita.com/sen-ltd/items/c742f06d54d2f65a943f
+<!-- /sen-publish:links -->
